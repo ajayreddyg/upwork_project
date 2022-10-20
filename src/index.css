@@ -69,13 +69,20 @@ sup {
   }
 }
 @media (max-width: 560px) {
+  .flex_container {
+    margin-right: 90px;
+  }
   h1 {
     font-size: 6rem;
   }
+  p {
+    margin-top: -20px;
+  }
   sup {
     position: absolute;
-    top: -5rem;
-    right: -6.5rem;
+    top: -4rem;
+    right: -5rem;
+    font-size: 6rem;
     color: #ffe600;
   }
 }
