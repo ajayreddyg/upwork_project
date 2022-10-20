@@ -10,6 +10,25 @@
   background-color: #0e8e60;
   display: grid;
   place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.arrows {
+  position: absolute;
+  top: 0;
+  display: flex;
+
+  right: 1rem;
+  transform: rotate(180deg);
+  padding: 15px;
+}
+.arrows svg {
+  font-size: 2rem;
+  color: #ffe600;
+  font-weight: bold;
+}
+.arrows svg:nth-child(2) {
+  margin-left: -20px;
 }
 .flex_container {
   justify-self: end;
@@ -22,10 +41,14 @@ p {
   font-size: 1.2rem;
   align-self: end;
   margin-top: -30px;
+  text-align: right;
+  color: white;
+  text-transform: capitalize;
 }
 
 h1 {
   color: #00b05a;
+  text-shadow: 0 0 4px black;
   font-size: 12rem;
 }
 
@@ -39,9 +62,7 @@ sup {
   color: #ffe600;
   font-size: 8rem;
 }
-p {
-  color: white;
-}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 9rem;
@@ -49,7 +70,7 @@ p {
 }
 @media (max-width: 560px) {
   h1 {
-    font-size: 7rem;
+    font-size: 6rem;
   }
   sup {
     position: absolute;
